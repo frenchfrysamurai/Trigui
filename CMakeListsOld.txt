@@ -1,0 +1,23 @@
+cmake_minimum_required(VERSION 3.10)
+project(shaders_class)
+
+# Set C++ standard
+set(CMAKE_CXX_STANDARD 17)
+set(CMAKE_CXX_STANDARD_REQUIRED ON)
+
+# Add executable
+add_executable(shaders_class shaders_class.cpp glad.c)
+
+# Include directories
+target_include_directories(shaders_class PRIVATE include)
+
+# Find GLFW
+find_package(PkgConfig REQUIRED)
+pkg_search_module(GLFW REQUIRED glfw3)
+
+# Link libraries
+target_link_libraries(shaders_class PRIVATE ${GLFW_LIBRARIES} dl GL)
+
+# Include GLFW headers
+target_include_directories(shaders_class PRIVATE ${GLFW_INCLUDE_DIRS})
+
