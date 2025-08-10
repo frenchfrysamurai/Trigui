@@ -1,3 +1,3 @@
-/home/emilio/projs/Trigui/3.3.shaders_class/build/CMakeFiles/shaders_class.dir
-/home/emilio/projs/Trigui/3.3.shaders_class/build/CMakeFiles/edit_cache.dir
-/home/emilio/projs/Trigui/3.3.shaders_class/build/CMakeFiles/rebuild_cache.dir
+/home/emilio/projs/Trigui/build/CMakeFiles/trigui.dir
+/home/emilio/projs/Trigui/build/CMakeFiles/edit_cache.dir
+/home/emilio/projs/Trigui/build/CMakeFiles/rebuild_cache.dir

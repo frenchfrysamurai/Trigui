@@ -1,0 +1,7 @@
+{
+	"InstallScripts" : 
+	[
+		"/home/emilio/projs/Trigui/build/cmake_install.cmake"
+	],
+	"Parallel" : false
+}

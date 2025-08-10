@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.10)
-project(shaders_class)
+project(trigui)
 
 # Set C++ standard
 set(CMAKE_CXX_STANDARD 17)
@@ -17,14 +17,14 @@ set(IMGUI_SRC
 )
 
 # Add executable
-add_executable(shaders_class
-    shaders_class.cpp
+add_executable(trigui
+    trigui.cpp
     glad.c
     ${IMGUI_SRC}
 )
 
 # Include directories
-target_include_directories(shaders_class PRIVATE
+target_include_directories(trigui PRIVATE
     include
     include/imgui
     ${GLFW_INCLUDE_DIRS}
@@ -35,7 +35,7 @@ find_package(PkgConfig REQUIRED)
 pkg_search_module(GLFW REQUIRED glfw3)
 
 # Link libraries
-target_link_libraries(shaders_class PRIVATE
+target_link_libraries(trigui PRIVATE
     ${GLFW_LIBRARIES}
     dl
     GL
@@ -43,6 +43,6 @@ target_link_libraries(shaders_class PRIVATE
 
 # On Linux, GLFW might also need these
 if(UNIX AND NOT APPLE)
-  target_link_libraries(shaders_class PRIVATE pthread X11 Xrandr Xi Xxf86vm Xinerama Xcursor)
+  target_link_libraries(trigui PRIVATE pthread X11 Xrandr Xi Xxf86vm Xinerama Xcursor)
 endif()
 

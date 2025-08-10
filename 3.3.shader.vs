@@ -6,9 +6,12 @@ layout (location = 2) in vec2 aUV;
 out vec3 ourColor;
 out vec2 fragUV;
 
+// For imgui to modify
+uniform float size;
+
 void main()
 {
-    gl_Position = vec4(aPos, 1.0);
+    gl_Position = vec4(size * aPos.x, size * aPos.y, size * aPos.z, 1.0);
     ourColor = aColor;
     fragUV = aUV;
 }
