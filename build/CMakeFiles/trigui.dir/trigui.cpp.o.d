@@ -28,7 +28,8 @@ CMakeFiles/trigui.dir/trigui.cpp.o: /home/emilio/projs/Trigui/trigui.cpp \
  /usr/include/x86_64-linux-gnu/bits/stdint-intn.h \
  /usr/include/x86_64-linux-gnu/bits/stdint-uintn.h \
  /usr/include/x86_64-linux-gnu/bits/stdint-least.h \
- /usr/include/GLFW/glfw3.h /home/emilio/projs/Trigui/learnopengl/shader.h \
+ /usr/local/include/GLFW/glfw3.h \
+ /home/emilio/projs/Trigui/learnopengl/shader.h \
  /home/emilio/projs/Trigui/include/glm/glm.hpp \
  /home/emilio/projs/Trigui/include/glm/detail/_fixes.hpp \
  /usr/include/c++/13/cmath /usr/include/c++/13/bits/requires_hosted.h \

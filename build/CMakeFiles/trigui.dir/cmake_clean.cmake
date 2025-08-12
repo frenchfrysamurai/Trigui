@@ -1,5 +1,4 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/trigui.dir/link.d"
   "CMakeFiles/trigui.dir/glad.c.o"
   "CMakeFiles/trigui.dir/glad.c.o.d"
   "CMakeFiles/trigui.dir/include/imgui/imgui.cpp.o"
